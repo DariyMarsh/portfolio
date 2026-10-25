@@ -1,4 +1,6 @@
 html {
+    color-scheme: light dark;
+    --border-color: oklch(50% 10% 200 / 40%);
     --color-accent: oklch(55% 0.15 250);
     accent-color: var(--color-accent);
 }
@@ -7,7 +9,7 @@ body {
     font: 100%/1.5 system-ui;
     max-width: 100ch;
     margin-inline: auto;
-    padding: 1em;
+    padding: 3.5em 1em 1em;
 }
 
 img {
@@ -18,7 +20,7 @@ img {
 nav {
     display: flex;
     margin-bottom: 2em;
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid var(--border-color);
 }
 
 nav a {
@@ -30,14 +32,14 @@ nav a {
 }
 
 nav a.current {
-    border-bottom: 0.4em solid oklch(80% 3% 200);
+    border-bottom: 0.4em solid var(--border-color);
     padding-bottom: 0.1em;
 }
 
 nav a:hover {
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: 0.1em;
-    background-color: oklch(from var(--color-accent) 95% 0.02 h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 h1 {
@@ -49,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
 
-input, textarea, button {
+input, textarea, button, select {
     font: inherit;
     box-sizing: border-box;
     min-width: 0;
@@ -97,7 +99,7 @@ form button {
 
 .resume h2 {
     color: var(--color-accent);
-    border-bottom: 1px solid oklch(80% 3% 200);
+    border-bottom: 1px solid var(--border-color);
     padding-bottom: 0.3em;
 }
 
@@ -134,4 +136,11 @@ form button {
     .projects {
         grid-template-columns: 1fr;
     }
+}
+
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
 }
