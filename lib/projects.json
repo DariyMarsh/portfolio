@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Portfolio: Data-Driven Projects (Lab 4)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Loaded portfolio projects from JSON, reused JavaScript rendering on the home and projects pages, and displayed live GitHub profile statistics."
+    },
+    {
+        "title": "Portfolio: JavaScript Navigation and Themes (Lab 3)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Created shared navigation, automatic current-page highlighting, and a persistent light, dark, and automatic theme selector."
+    },
+    {
+        "title": "Portfolio: Responsive CSS Layouts (Lab 2)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Styled a personal portfolio with Flexbox navigation, responsive project grids, CSS subgrid, and a formatted resume."
+    },
+    {
+        "title": "Portfolio: HTML Foundations (Lab 1)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built the home, projects, contact, and resume pages using semantic HTML."
+    },
+    {
+        "title": "Stock Option Signal Dashboard",
+        "year": 2025,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Developed a Python dashboard combining technical indicators, financial news sentiment, and machine learning models, with interactive Plotly visualizations."
+    },
+    {
+        "title": "Tasks — Swift iOS App",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built a SwiftUI to-do application with Firebase authentication and persistent cloud task storage."
+    },
+    {
+        "title": "eBay Terapeak Market Analyzer",
+        "year": 2024,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built a Python and Playwright pipeline to collect sales data, clean market metrics with Pandas, and generate Excel inventory analyses."
+    },
+    {
+        "title": "Future Project 1 (Placeholder)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for a future course assignment. Details and an image will be added when the project is completed."
+    },
+    {
+        "title": "Future Project 2 (Placeholder)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for a future course assignment. Details and an image will be added when the project is completed."
+    },
+    {
+        "title": "Future Project 3 (Placeholder)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for a future course assignment. Details and an image will be added when the project is completed."
+    },
+    {
+        "title": "Future Project 4 (Placeholder)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for a future course assignment. Details and an image will be added when the project is completed."
+    },
+    {
+        "title": "Future Project 5 (Placeholder)",
+        "year": 2026,
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Placeholder for a future course assignment. Details and an image will be added when the project is completed."
+    }
+]

@@ -144,3 +144,30 @@ form button {
     right: 1rem;
     font-size: 80%;
 }
+
+.projects h3 {
+    margin: 0;
+}
+
+#profile-stats dl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    text-align: center;
+}
+
+#profile-stats dt {
+    font-size: 0.875em;
+}
+
+#profile-stats dd {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+@media (max-width: 30em) {
+    #profile-stats dl {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
