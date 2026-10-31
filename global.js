@@ -118,7 +118,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         article.innerHTML = `
             <${headingLevel}></${headingLevel}>
             <img>
-            <p></p>
+            <div><p></p><p class="project-year"></p></div>
         `;
         // Assign data as text so project descriptions cannot inject HTML.
         article.querySelector(headingLevel).textContent = project.title || 'Untitled project';
@@ -126,6 +126,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
         image.src = project.image || 'https://vis-society.github.io/labs/2/images/empty.svg';
         image.alt = project.title || 'Project preview';
         article.querySelector('p').textContent = project.description || 'Description coming soon.';
+        article.querySelector('.project-year').textContent = project.year ?? '';
         containerElement.appendChild(article);
     }
 }

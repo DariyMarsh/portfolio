@@ -171,3 +171,86 @@ form button {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.project-year {
+    font-family: Baskerville, Georgia, serif;
+    font-variant-numeric: oldstyle-nums;
+    color: color-mix(in oklch, canvastext 65%, canvas);
+}
+
+.chart-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+#projects-pie-plot {
+    width: 20em;
+    max-width: 100%;
+    margin-block: 2em;
+    overflow: visible;
+}
+
+.legend {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 1em;
+    min-width: min(100%, 12em);
+    list-style: none;
+    border: 1px solid var(--border-color);
+    padding: 1em;
+}
+
+.legend-item button {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background: none;
+    color: inherit;
+    border: 0;
+    padding: 0.4em;
+    cursor: pointer;
+}
+
+.swatch {
+    display: inline-block;
+    width: 1em;
+    aspect-ratio: 1;
+    border-radius: 0.2em;
+    background: var(--color);
+}
+
+#projects-pie-plot path {
+    cursor: pointer;
+    transition: opacity 300ms, fill 300ms;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+    opacity: 0.5;
+}
+
+#projects-pie-plot .selected, .legend .selected {
+    --color: oklch(60% 0.25 0) !important;
+}
+
+#projects-pie-plot path.selected {
+    fill: var(--color);
+}
+
+#projects-pie-plot path:focus-visible {
+    outline: none;
+    stroke: canvastext;
+    stroke-width: 1.5;
+}
+
+.legend button:focus-visible {
+    outline: 2px solid var(--color-accent);
+}
+
+.searchBar {
+    width: 100%;
+    padding: 0.6em;
+    margin-top: 1em;
+}
