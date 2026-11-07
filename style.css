@@ -254,3 +254,110 @@ form button {
     padding: 0.6em;
     margin-top: 1em;
 }
+
+dl.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9em, 1fr));
+    gap: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+dl.stats dt {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: color-mix(in oklch, canvastext 60%, canvas);
+}
+
+dl.stats dd {
+    margin: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#chart svg {
+    width: 100%;
+    height: auto;
+}
+
+.gridlines .tick line {
+    stroke-opacity: 0.35;
+}
+
+.gridlines .domain {
+    display: none;
+}
+
+#chart circle {
+    transition: 200ms;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#chart circle:hover {
+    transform: scale(1.5);
+}
+
+#chart circle.selected {
+    fill: #ff6b6b;
+}
+
+dl.info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.25em 1em;
+    margin: 0;
+    font-size: 0.875em;
+    transition-duration: 500ms;
+    transition-property: opacity, visibility;
+}
+
+dl.info dt {
+    color: color-mix(in oklch, canvastext 60%, canvas);
+}
+
+dl.info dd {
+    margin: 0;
+    font-weight: 500;
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tooltip {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    z-index: 10;
+    max-width: 22em;
+    padding: 0.75em 1em;
+    background-color: color-mix(in oklch, canvas 85%, transparent);
+    backdrop-filter: blur(6px);
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 1em oklch(0% 0 0 / 20%);
+}
+
+.tooltip a {
+    overflow-wrap: anywhere;
+}
+
+@keyframes marching-ants {
+    to {
+        stroke-dashoffset: -8; /* 5 + 3 */
+    }
+}
+
+#chart .selection {
+    fill-opacity: 0.1;
+    stroke: currentColor;
+    stroke-opacity: 0.7;
+    stroke-dasharray: 5 3;
+    animation: marching-ants 2s linear infinite;
+}
+
+#selection-count {
+    font-weight: 500;
+}
